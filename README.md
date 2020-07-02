@@ -1,0 +1,2 @@
+# otomange
+lengua indigena
