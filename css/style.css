@@ -111,7 +111,9 @@ footer {
 
 #intro .btn-danger,
 #contact .btn-danger {
-    background: #f2545f;
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B);;
     border-color: transparent;
 }
 
@@ -126,12 +128,12 @@ footer {
 }
 
 #contact .btn-danger:hover {
-  background: #222;
+  background: #333333;
 }
 
 #intro .btn-default:hover {
-    background: #ffffff;
-    color: #333333;
+    background: #333333;
+    color: #3a3a3a;
     border-color: transparent;
 }
 
@@ -255,25 +257,27 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
 /*---------------------------------------
     Navigation Links section              
 -----------------------------------------*/
+
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #ffa6c9;
+    background-color: #ffffff;
 }
 
 .custom-navbar .navbar-brand {
-    color: #ffffff;
+    color: #cb6ce6;
     font-weight: 600;
     font-size: 3rem;
     line-height: 40px;
+    min-width: 74px;
 }
 
 .custom-navbar .nav li a {
-    color: #ffffff;
+    color: #cb6ce6;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 60px;
     transition: all 0.4s ease-in-out;
 }
 
@@ -313,7 +317,7 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
         background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
-        background: #ffa6c9;
+        background: #ffffff;
         padding: 0;
     }
 
@@ -325,7 +329,7 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/intro-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/intro-bg.jpg') 90% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -340,6 +344,20 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
           align-items: center;
     height: 100vh;
     text-align: center;
+  
+      
+      
+    
+}
+img.opacity {
+  opacity: 1;
+  filter: alpha(opacity=50);
+  zoom: 1;
+}  
+img.opacity:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=100);
+  zoom: 1;
 }
 
 #intro h3 {
